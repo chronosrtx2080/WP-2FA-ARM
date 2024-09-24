@@ -16,4 +16,3 @@ function wp_2fa_verify_code($secret, $code) {
     $ga = new GoogleAuthenticator();
     return $ga->verifyCode($secret, $code, 2); // 2 = 2*30sec de tolerancia
 }
-?>
